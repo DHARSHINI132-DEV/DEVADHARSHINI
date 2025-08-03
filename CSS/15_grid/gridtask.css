@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh; 
+    background: linear-gradient(black,red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.outer > .heading{
+    color: white;
+}
+
+.outer > .inner{
+    width: 70vw;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+.inner > .box{
+    background-size: cover;
+}
+
+.inner > #box1{
+    grid-row: span 2;
+    background-image: url(https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg);
+    border-top-left-radius: 20px;
+}
+
+.inner > #box2{
+    background-image: url(https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg);
+}
+
+.inner > #box3{
+    background-image: url(https://images.pexels.com/photos/1043458/pexels-photo-1043458.jpeg);
+    border-top-right-radius: 20px;
+}
+
+.inner > #box6{
+    background-image: url(https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg);
+}
+
+.inner > #box5{
+    background-image: url(https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg);
+    border-bottom-left-radius: 20px;
+}
+
+.inner > #box4{
+    background-image: url(https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg);
+    grid-column: span 2;
+}
+
+.inner > #box7{
+    background-image: url(https://images.pexels.com/photos/1368382/pexels-photo-1368382.jpeg);
+    border-bottom-right-radius: 20px;
+}
+
+.inner > .box:hover{
+    background-position: bottom;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner > div{
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px black;
+}

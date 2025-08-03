@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            height: 100vh;
+            font-size: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(pink,purple);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let userName = localStorage.getItem("userName")
+        document.querySelector("h1").innerHTML = `Welcome ${userName} to home page`
+    </script>
+</body>
+</html>

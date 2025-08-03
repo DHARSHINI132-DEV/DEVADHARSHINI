@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<!-- 
+javascript can be used in both frontend and in backend
+javascript can be written in 2 ways 
+    1.internal ->   written inside html file.
+                    internal javascript should be written inside body tag before closing the body tag
+    2.external ->   write in new file and connect the html and js file
+                    to connect,use script tag,in src give the path to that file  <script src="./intro.js"></script>
+
+👍clg or log  shortcut key -> console.log() -> used to print the statement
+
+==>👍in javascript semicolon is not mandatory .if given also it will not show error
+
+❗❗⚡important question -> difference between let,var,const⚡❗❗
+for declaring a variable we have 3 keywords  in javascript
+1.let =>    possible => declaration is possible,initialization is possible,reinitialization
+            not possible=> ❗❗re-declaration not possible.
+2.var =>  possible=>we can reinitialize the value.
+                    ❗❗re-declaration  possible.
+3.const => it can't be changed later
+            possible=> declaration and initialization should be in the same line
+            not possible=>declaration,initialization,re-initialization
+
+
+❗❗typeof❗❗ operator
+
+typeof operator  is used to know the datatype of the variable
+console.log(typeof eid)
+
+
+datatype:
+    1.primitive
+        ->number 
+            => number is integer ,float the  datatype will be number  
+        ->String 
+            => for initialization of String ,use double quote "",single quote '',batig `` also
+        ->boolean 
+            => true or false
+        ->undefined 
+            => if variable id declared and not initialized then it will show as undefined.
+            => typeof undefined is also undefined.
+        
+-->
+<body>
+    <h1 style="text-align: center;">Javascrpit Introduction</h1>
+
+    <script>
+        console.log("Iam internal javascript");
+    </script>
+    
+    <script src="./intro.js"></script>
+</body>
+</html>

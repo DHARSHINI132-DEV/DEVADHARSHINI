@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner {
+    border: 2px solid black;
+    border: none;
+    width: 350px;
+    height: 400px;
+    background-color: palevioletred;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+    cursor: pointer;
+    box-shadow: 0 5px 3px gray;
+    /*overflow: hidden;/*it will hide the extra content*/
+    /*overflow: scroll;/*it will helps to scroll down the extra content but both the sides it will give the sroll bar*/
+    overflow: auto;/*helps to sroll the content which side it is needed*/
+    /*if we need particularly in x and y axis we can use overflow-x and overflow-y*/
+    /*by default the value of overflow is visible (in which the content will be out of the box)*/
+}
+
+.inner > h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+/*helps to scrolldown without any scroll down bar*/
+::-webkit-scrollbar{
+    display: none;
+    cursor: pointer;
+}

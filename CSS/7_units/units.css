@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.con2{
+    height: 400px;
+   
+    width: 600px;
+    background-color: red;
+}
+
+/* .con2 > .box2{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+} */
+.con2 > .box2{
+    height: 90%;
+    width: 50%;
+    background-color: yellow;
+}
+
+.con1{
+    background-color: black;
+    height: 50vh;
+    width: 60vw;
+}
+
+/*UNITS
+  -----
+1. Absolute Unit
+----------------
+            - Takes the exact size given 
+            - No relation between the parent and the child
+
+2. Relative Unit
+-----------------
+            - Takes the size by comparing it with its parent
+            - relation between the parent and the child
+        1. %  ---> compares with the parent
+            NOTE: When we give % for div block in a situation where it is the direct child of body tag which has full width and 0 height  
+        2. vh ---> viewport height ---> compares with the view port */

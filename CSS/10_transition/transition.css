@@ -1,0 +1,27 @@
+.outer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.inner{
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    transition: all 2s ease-in 1s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    cursor: pointer;
+}
+.inner:hover{
+background-color: aqua;
+border-radius: 200px;
+}
+
+/*transition: all 2s ease-in 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */

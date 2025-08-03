@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            height: 80px;
+            background-color: black;
+            color: white;
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+        }
+
+        nav > h2{
+            text-transform: uppercase;
+        }
+
+        nav > ul{
+            display: flex;
+            gap: 20px;
+        }
+
+        nav > ul > li{
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: color 0.4s ease-in;
+            &:hover{
+                color: orangered;
+            }
+        }
+
+        nav > button{
+             padding: 10px 20px;
+            border: none;
+            background-color: orangered;
+            color:white;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+              text-transform: uppercase;
+            transition: background-color 0.4s ease-in;
+
+            &:hover{
+                background-color: orange;
+            }
+        }
+
+        main{
+                height: 200px;
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+            }
+            
+        section{
+            height: 200px;
+            background-color: darksalmon;
+        } 
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>event</h2>
+        <ul>
+            <li>event handler</li>
+            <li>event listener</li>
+        </ul>
+
+        <button onclick="login()">login</button> 
+        <!-- when we click the login button the message in js should be displayed so for that we should give onclick and the the func should be called -->
+    </nav>
+
+    <main onmouseover="changeColor()" onmouseleave="changeColor2()">
+        <!--onmouseover -- this will be used when we want to change the color when the curson is on the element 
+        onmouseleave -- this will be used to again get back the old color before the mouse is placed-->
+        <h1>Event in JavaScript</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <button>know more</button>
+    </main>
+
+    <section>
+        <h2>using Dom properties</h2>
+        <button class ="btn">
+            click here
+        </button>
+
+    </section>
+    
+    <script src="./event.js"></script>
+</body>
+</html>

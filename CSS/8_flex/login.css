@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+}
+
+.outer > .left{
+    flex-basis: 45%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.left > h1{
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.left > .main{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.main > .login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login > p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.outer > .right{
+    flex-basis: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+
+.outer > .right > img{
+    height: 400px;
+    width: 400px;
+}

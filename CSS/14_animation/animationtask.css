@@ -1,0 +1,103 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background:linear-gradient(to right , orangered , yellow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.outer > .inner1{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.inner1 > .move{
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid green;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite ;
+}
+
+.outer > .inner2{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite ;
+}
+
+.inner2 > .spin{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+}
+
+.outer > .inner3{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inner3 > .dot1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    animation: drops 2s linear 0.1s infinite alternate;
+}
+
+.inner3 > .dot2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: drops 2s linear 0.2s infinite alternate;
+}
+
+.inner3 > .dot3{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: green;
+    animation: drops 2s linear 0.3s infinite alternate;
+}
+
+.inner3 > .dot4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    animation: drops 2s linear 0.4s infinite alternate;
+}
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes drops {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(200px);
+    }
+}

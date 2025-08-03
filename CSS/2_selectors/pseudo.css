@@ -1,0 +1,130 @@
+
+
+nav{
+    background-color: antiquewhite;
+}
+
+/* Psedo Class Selector (:)
+    --------------------
+1. HOVER(:hover) - for this we need to target the element and give (:hover)
+- inside which we can give normal text and font stylings
+- This works on touch */
+nav > h2:hover{
+
+    color:red;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+header{
+    height: 200px;
+    background-color: aqua;
+}
+
+header > h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 2. ACTIVE(:active) - for this we need to target the element and give (:active)
+- inside which we can give normal text and font stylings
+- This works on click */
+header > h1:active{
+    color:green;
+}
+
+section{
+    background-color: cadetblue;
+}
+
+/* 3. nth-child(:nth-child) - for this we need to target the element and give (:nth-child(child number))
+- inside which we can give normal text and font stylings
+- the child is counted from starting and every element we should not group the element based on the tag */
+section > h1:nth-child(2)
+{
+    color:white;
+}
+
+section > p:nth-child(6)
+{
+    background-color: red;
+}
+
+section > ol > li:nth-child(2n)
+{
+    background-color: white;
+}
+
+section > ol > li:nth-child(2n+1)
+{
+    background-color: gray;
+}
+
+article > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+article > p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Pseudo Element(::)
+   ------------------
+1. first letter(::first-letter)- used to target the first Letter */
+article > p::first-letter{
+    font-size: 50px;
+}
+
+/* 2. first line(::first-line) - used to target the first line */
+article > p::first-line{
+    font-style: italic;
+}
+
+/* 3. before(::before) - here the values given is dispalyed before the selected item
+- for this we need to give the value inside *** content and within "" ***("***") */
+
+article > h1::before{
+    content: "***";     
+    color:red;
+}
+
+/* 4. after(::after) - here the values given is dispalyed after the selected item
+- for this we need to give the value inside *** content and within "" ***("!!") */
+article > h1::after{
+    content : " !!";
+    color:green;
+}
+
+/* 5. selection - used to display the selected content in the givem color */
+article::selection{
+    background-color: black;
+    color:white;
+}
+
+/* 6. marker - used to give the   styling  for the list styling element */
+article > ol > li::marker{
+    color:red;
+}
+
+article > ol >li:nth-child(2n+1)::marker{
+    color:blue;
+    font-weight: bold;
+}
+
+form > input[type="text"]{
+    background-color: gray;
+}
+
+.container > a[target="_self"]{
+
+    font-size: 20px;
+}
+
+/* NOTE:
+   ----
+- li*4 ---> 4 list will be created
+- li{List-$}*4 --->4 list will be created with the content given  in curly braces and dolar gives the numbering inside the list */

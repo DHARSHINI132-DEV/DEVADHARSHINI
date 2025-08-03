@@ -1,0 +1,46 @@
+/* 1. tag name selector-  tag name selector is used to give css by using the tags but, it will be applied to all the tags having the same name for this we are going to the next option as id selector */
+nav{
+    background-color: red;
+    height: 100px;
+}
+
+main{
+    height: 250px;
+    background-color: aqua;
+}
+/*
+h1{
+color: white;
+}
+*/
+
+/* 2.id selector - this tag is used to uniquely identify the place where css must be applied as each place will be having its own tag if we want to apply to 2 places such that then giving the same id is useless as it is not uniquely thus we go to class selector */
+#logo{
+    color: white;
+}
+
+section{
+    height: 250px;
+    background-color: burlywood;
+}
+/*
+p{
+color:green;
+}
+*/
+
+/* 3.class selctor - this tag is used to apply styling for more than one part or section */
+.para{
+    color: blue;
+}
+
+/* 4.universal selector- This is used to style all the elements */
+*{
+    text-align: center;
+    font-style: italic;
+}
+
+/* 5.group selector - THIS IS USED TO GROUP A SET OF SELESCTORS TOGETHER */
+p,#logo{
+    text-decoration: underline;
+}

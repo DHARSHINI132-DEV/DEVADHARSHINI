@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(76, 76, 217);
+        }
+
+        .outer > .inner{
+            background-color: aqua;
+            border-radius: 2px;
+            padding: 10px;
+        }
+
+         form{
+            height: 250px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        h1{
+            color: black;
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+
+        label{
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-spacing: 1.5px;
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        input{
+            display: block;
+            border-radius: 5px;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        button{
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+            width: 100%;
+            height: 40px;
+            text-transform: uppercase;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in;
+
+            &:hover{
+                background-color: gray;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <h1>Login Form</h1>
+        <div class="inner">
+            <form action="" id="loginForm">
+                <label for="">User name</label>
+                <input type="text" id="loginName">
+                <label for="">User password</label>
+                <input type="password" id="loginPass">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .outer{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .outer > .inner{
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        form{
+            height: 250px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+
+        label{
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-spacing: 1.5px;
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        input{
+            display: block;
+            border-radius: 5px;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        button{
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 40px;
+            text-transform: uppercase;
+            font-size: 30px;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in;
+
+            &:hover{
+                background-color: gray;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="outer">
+        <h1>Signup Form</h1>
+        <div class="inner">
+            <form action="">
+                <label for="">User name</label>
+                <input type="text" id="userName">
+                <label for="">User password</label>
+                <input type="password" id="userPass">
+                <button>register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./signup.js"></script>
+    
+</body>
+</html>

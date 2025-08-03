@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            display: flex;
+            height: 100vh;
+            background-color: alicewhite;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .inner{
+            width: 350px;
+            background-color: black;
+            border-radius: 20px;
+            padding: 20px 20px;
+           color: white;
+        }
+
+        form > input{
+            display: block;
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            letter-spacing: 1.4px;
+        }
+
+        form > label{
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        form > button{
+            width: 100%;
+            padding: 10px;
+            background-color: #555;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:white;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <form action="" id="num">
+                <label for="">Number 1</label>
+                <input type="number" id="num1">
+                <label for="">Number2</label>
+                <input type="number" id="num2">
+                <button>Add</button>
+            </form>
+        </div>
+        <div class="output">
+
+        </div>
+
+        <select name="" id="">
+            <option value="">select color</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+
+        </select>
+    </div>
+    <script src="./formtask.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+nav > h1{
+    letter-spacing: 1.3px;
+    color:orangered;
+}
+
+nav > ul > li{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+nav > ul>li:hover{
+    color:orangered;
+}
+
+section{
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .container{
+    height: 450px;
+    width: 650px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 8px 6px rgba(0,0,0,0.6);
+    
+    position: relative;
+   
+}
+
+
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    color:white;
+
+   /* position: relative;
+   left:30px;
+   bottom:10px; */
+
+
+   position: absolute;
+   right:0px;
+   bottom:0px;
+  
+
+}
+#box2{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    color:white;
+
+    position: absolute;
+    right:0;
+ 
+}
+#box3{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    color:white;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+   
+}
+#box4{
+    height: 80px;
+    width: 80px;
+    background-color: green;
+    color:white;
+    position: absolute;
+    bottom:0;
+}
+#box5{
+    height: 90px;
+    width: 90px;
+    background-color: yellow;
+    
+}
+
+.main{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    background: #888;
+}
+
+.main > h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 0px 2px 3px black;
+}
+
+.main > p{
+    font-size: 21px;
+    color: white;
+}
+
+.main > p > span{
+    font-weight: bold;
+    font-size: 24px;
+    color:black
+    
+}
+article{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+
+
+article > .box{
+    height: 250px;
+    width: 360px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+
+.box > img{
+    height: 100px;
+}
+
+.map > iframe{
+    width: 100%;
+}
+
+
+.contact{
+    background-color: antiquewhite;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact > .inner{
+    background-color: white;
+    width: 80%;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 6px black;
+    border-radius: 20px;
+}
+
+form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+form > input::placeholder{
+    font-size: 16px;
+}
+
+form > textarea::placeholder{
+    font-size: 16px;
+}
+form > textarea{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+form > .formGroup{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.formGroup > button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: gray;
+    font-size: 20px;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;     
+}
+
+.formGroup > button:hover{
+    background-color: #ccc;
+    color:black;
+}
+
+
+footer{
+    height: 70px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/*                    POSITION
+                    ---------
+
+    1. Static        |  for this we have certain attributes such as :
+    2. Relative      |
+    3. Absolute      |  >left   >right   >top    >bottom
+
+
+1. Relative:
+   ---------
+                > It will not come out of the document flow
+                > It will not affect others
+                > It will change position based on its actual position
+
+2. Absolute:
+   ---------
+                > It will come out of the document flow
+                > It will affect others
+                > It will change position based on its relative position if it is not their then it will arrange with viewport */

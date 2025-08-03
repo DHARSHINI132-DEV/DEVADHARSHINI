@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 700px;
+    border: 3px solid black;
+    display: flex;
+    background-color: yellow;
+    /* flex-direction: row;
+    flex-direction: row-reverse; 
+    flex-direction: column; 
+    flex-direction: column-reverse; 
+    justify-content: flex-start; 
+    justify-content: flex-end; */
+    justify-content: center;
+    /*justify-content: space-between; 
+    justify-content: space-around;
+    justify-content: space-evenly; */
+    align-items: center;
+    gap:20px;
+}
+
+.container > .box{
+    height: 80px;
+    width: 80px;
+    border: 3px solid red;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container > .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FLEX
+  ----
+- Main axis ----->flex direction
+- Cross axxis 
+1. disply : flex ---> all elements will come in the same row becoz by default flex direction is row 
+2. flex direction ---> used to say by which direction flex must be arranged
+            *row
+            *column
+            *row reverse
+            *column reverse
+3. justify content ---> to arrange items in the main axis
+            *flex start
+            *flex end
+            *centre
+    for gap:
+            *space around
+            *space between -->doesnt provide space at the satrting and the ending
+            *space evenly 
+4. allign items ---> allingning the particular item in particular part of the display
+            *it takes all the properties like justify content
+5. gap ---> gives the gap between the items */
