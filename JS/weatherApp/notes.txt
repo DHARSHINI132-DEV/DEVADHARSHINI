@@ -1,0 +1,9 @@
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=2f7c46a9cea09f0a4f33c7b70f17f2a9
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+2f7c46a9cea09f0a4f33c7b70f17f2a9
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=2f7c46a9cea09f0a4f33c7b70f17f2a9

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: indianred;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.header{
+    display: flex;
+    width: 250px;
+
+}
+.header > input{
+    flex-basis: 60%;
+    padding: 10px;
+    border: none;
+}
+.header>button{
+    flex-basis: 40%;
+    border: none;
+    background-color: burlywood;
+    cursor: pointer;
+}
+.main{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
